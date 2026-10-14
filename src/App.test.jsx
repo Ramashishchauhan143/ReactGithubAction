@@ -7,7 +7,7 @@ import App from './App';
 test('renders App component and checks for text messages', () => {
   render(<App />);
 
-  const helloElement = screen.getByText(/hi Ashish/i);
+  const helloElement = screen.getByText(/Hello Ashish/i);
   expect(helloElement).toBeInTheDocument();
 
   const secondElement = screen.getByText(/This is second writen by features-1/i);
